@@ -5,4 +5,4 @@
 		android:drawable="@drawable/btn_top_on" />
 	<item android:state_enabled="false" android:drawable="@drawable/btn_top_on" />
 	<item android:drawable="@drawable/btn_top_off" />
-</selector><!-- From: file:/home/yokoi/Android/projects/docomo/app/src/main/res/drawable/btn_top.xml -->
+</selector><!-- From: file:/Users/sximada/ng/var/src/develop/docomo_api/app/src/main/res/drawable/btn_top.xml -->

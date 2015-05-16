@@ -89,4 +89,4 @@
                 android:text="@string/credit"
                 android:autoLink="web" />
         </LinearLayout>
-</ScrollView><!-- From: file:/home/yokoi/Android/projects/docomo/app/src/main/res/layout/activity_app_info.xml -->
+</ScrollView><!-- From: file:/Users/sximada/ng/var/src/develop/docomo_api/app/src/main/res/layout/activity_app_info.xml -->

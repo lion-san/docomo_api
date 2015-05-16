@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/yokoi/Android/projects/docomo/app/src/main/res/values-v14/styles.xml -->
+    <!-- From: file:/Users/sximada/ng/var/src/develop/docomo_api/app/src/main/res/values-v14/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
         <!-- API 14 theme customizations can go here. -->

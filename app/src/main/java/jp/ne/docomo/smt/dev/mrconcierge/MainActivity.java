@@ -39,7 +39,7 @@ import jp.ne.docomo.smt.dev.sentenceunderstanding.data.SentenceUserUtteranceData
 */
 public class MainActivity extends Activity {
     // APIキー(開発者ポータルから取得したAPIキーをここに記述する)
-    private static final String APIKEY = docomo Developer supportにて発行したAPIKEY;
+    private static final String APIKEY = "";
 
     private static final int SETTING_REQUEST = 100; // 設定画面のリクエストコード
 
