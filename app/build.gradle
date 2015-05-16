@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "jp.ne.docomo.smt.dev.ddssampleapp"
+        minSdkVersion 11
+        targetSdkVersion 15
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+}
+
+dependencies {
+    compile files('libs/FSRServiceOpen.jar')
+    compile files('libs/docomo-aitalk-android-sdk-1.0.1.jar')
+    compile files('libs/docomo-common-android-sdk-1.0.2.jar')
+    compile files('libs/docomo-dialogue-android-sdk-2.0.0.jar')
+    compile files('libs/docomo-knowledge-android-sdk-1.0.2.jar')
+    compile files('libs/docomo-sentenceunderstanding-android-sdk-1.0.1.jar')
+    compile files('libs/jackson-annotations-2.2.3.jar')
+    compile files('libs/jackson-core-2.2.3.jar')
+    compile files('libs/jackson-databind-2.2.3.jar')
+    compile files('libs/docomo-common-android-sdk-mrconcierge-1.0.2.jar')
+}

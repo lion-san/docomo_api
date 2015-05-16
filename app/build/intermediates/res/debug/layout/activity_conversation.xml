@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".ConversationActivity" >
+
+    <!-- フッターエリア -->
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_dark" >
+
+        <!-- マイクボタン -->
+
+        <ImageButton
+            android:id="@+id/btn_recg"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/content_description"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_mic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/chara_erea"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/footer"
+        android:background="#f0eff4" >
+
+        <!-- はじめからボタン -->
+
+        <ImageButton
+            android:id="@+id/btn_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/content_description"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_top" />
+
+        <ImageView
+            android:id="@+id/img_chara"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@string/content_description"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_chara"
+            android:layout_toRightOf="@+id/btn_restart"
+            android:gravity="right" />
+
+    </RelativeLayout>
+
+    <!-- 会話表示エリア -->
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chara_erea" >
+
+        <LinearLayout
+            android:id="@+id/conersation_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="15dp" />
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/home/yokoi/Android/projects/docomo/app/src/main/res/layout/activity_conversation.xml -->

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 音声認識 -->
+
+    <!-- 音声合成 -->
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    
+        <TextView
+            android:id="@+id/tv2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_voice_engine"
+            android:textSize="24sp" />
+
+        <!-- 音声合成AI -->
+        <RadioButton
+            android:id="@+id/radioButton2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_voice_engine_AI" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <TextView
+                android:id="@+id/tv2_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="@string/txt_voice_name"
+                android:textSize="16sp" />
+
+            <!-- AIの話者 -->
+            <Spinner
+                android:id="@+id/spinner2_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- 音声合成IT -->
+        <RadioButton
+            android:id="@+id/radioButton2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_voice_engine_IT" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <TextView
+                android:id="@+id/tv2_2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="@string/txt_voice_name"
+                android:textSize="16sp" />
+
+            <!-- ITの話者 -->
+            <Spinner
+	            android:id="@+id/spinner2_2_1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center" >
+
+        <!-- 設定ボタン -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_setting" />
+
+    </LinearLayout>
+
+</LinearLayout>

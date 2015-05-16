@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_appinfo"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_appinfo"/>
+
+    <item
+        android:id="@+id/menu_appsettings"
+        android:orderInCategory="101"
+        android:showAsAction="never"
+        android:title="@string/menu_appsettings"/>
+
+</menu><!-- From: file:/home/yokoi/Android/projects/docomo/app/src/main/res/menu/activity_conversation.xml -->

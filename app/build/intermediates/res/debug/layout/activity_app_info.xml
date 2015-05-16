@@ -1,0 +1,92 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@string/content_description"
+                android:scaleType="center"
+                android:src="@drawable/ic_launcher" />
+
+            <!-- アプリケーション名表示エリア -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rectangle_red"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <!-- タイトル：アプリケーション名 -->
+
+                <TextView
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_app_name"
+                    android:textSize="14sp" />
+
+                <!-- アプリケーション名 -->
+
+                <TextView
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/app_name"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <!-- アプリケーションバージョン表示エリア -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/rectangle_red"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <!-- タイトル：アプリケーションバージョン -->
+
+                <TextView
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_app_version"
+                    android:textSize="14sp" />
+
+                <!-- アプリケーションバージョン -->
+
+                <TextView
+                    android:id="@+id/app_version"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!-- 「HeartRails Express」クレジット表記 -->
+
+            <TextView
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/credit"
+                android:autoLink="web" />
+        </LinearLayout>
+</ScrollView><!-- From: file:/home/yokoi/Android/projects/docomo/app/src/main/res/layout/activity_app_info.xml -->

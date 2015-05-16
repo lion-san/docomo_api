@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="docomo-sentenceunderstanding-android-sdk-1.0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/docomo-sentenceunderstanding-android-sdk-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
