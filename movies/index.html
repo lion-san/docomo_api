@@ -16,8 +16,15 @@ function getDuration() {
     document.getElementById("nagasa").innerHTML = v.duration;
 }
 
+function load_movie(url){
+    var parser = document.createElement('a');
+    parser.href = url;
+    var position = parseFloat(parser.hash.substr(1));
+    v.currentTime = position;
+    v.play();
+}
+
 function playVideo() {
-    v.currentTime = 181.65;
     //再生完了の表示をクリア
     // document.getElementById("kanryou").innerHTML = "";
     //動画を再生
