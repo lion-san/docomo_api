@@ -4,19 +4,10 @@
     <meta charset=utf-8>
     <title>video要素、audio要素をJavaScriptから操作する　サンプル</title>
   </head>
-  <body onLoad="getDuration()">
+  <body>
     <video id="video" width="400" height="300" onClick="playVideo()">
       <source src="https://vs.pacificleague.jp/packathon/movies/150419EF4b_high_new.mp4">
     </video>
-    <div style="width:400px; background-color:#333333; color:#ffffff;">
-      <input type="button" value="再生" onClick="playVideo()">
-      <input type="button" value="一時停止" onClick="pauseVideo()">
-      <input type="button" value="↑" onClick="upVolume()">
-      <input type="button" value="↓" onClick="downVolume()"><br>
-      現在（秒）：<span id="ichi">0</span><br>
-      全体（秒）：<span id="nagasa"></span><br>
-      <span id="kanryou"></span>
-    </div>
     <script type="text/javascript">
 var v = document.getElementById("video");
 
@@ -28,14 +19,14 @@ function getDuration() {
 function playVideo() {
     v.currentTime = 181.65;
     //再生完了の表示をクリア
-    document.getElementById("kanryou").innerHTML = "";
+    // document.getElementById("kanryou").innerHTML = "";
     //動画を再生
     v.play();
 
     //現在の再生位置（秒）を表示
-    v.addEventListener("timeupdate", function(){
-        document.getElementById("ichi").innerHTML = v.currentTime;
-    }, false);
+    // v.addEventListener("timeupdate", function(){
+    //     document.getElementById("ichi").innerHTML = v.currentTime;
+    // }, false);
     //再生完了を知らせる
     v.addEventListener("ended", function(){
         document.getElementById("kanryou").innerHTML = "動画の再生が完了しました。";
