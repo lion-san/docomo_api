@@ -6,7 +6,7 @@
   </head>
   <body>
     <video id="video" width="400" height="300" onClick="playVideo()">
-      <source src="https://vs.pacificleague.jp/packathon/movies/150419EF4b_high_new.mp4">
+      <source src="">
     </video>
     <script type="text/javascript">
 var v = document.getElementById("video");
@@ -20,6 +20,7 @@ function load_movie(url){
     var parser = document.createElement('a');
     parser.href = url;
     var position = parseFloat(parser.hash.substr(1));
+    v.src = url;
     v.currentTime = position;
     v.play();
 }
